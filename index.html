@@ -1,47 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <h1> Xutik's Calculator</h1>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="script.css">
-        <script src="script.js"></script>
+        <script src="index.js"></script>
     </head>
     <body>
         <script src="" async defer></script>
-        <div class="calculator">
-            <input type="text" class="display" id="display" disabled>
-            <div class="buttons">
-                <div class="row">
-                    <button data-value="7">7</button>
-                    <button data-value="8">8</button>
-                    <button data-value="9">9</button>
-                </div> 
-                <div class="row">                
-                    <button data-value="4">4</button>
-                    <button data-value="5">5</button>
-                    <button data-value="6">6</button>
-                </div>
-                <div class="row">
-                    <button data-value="1">1</button>
-                    <button data-value="2">2</button>
-                    <button data-value="3">3</button>
-                </div>
-                <div class="row">
-                    <button data-value="0">0</button>
-                    <button data-value=".">.</button>
-                    <button class="equal" data-value="=">=</button>
-                </div>
-                <div class="row">
-                    <button class="operator" data-value="+">&plus;</button>
-                    <button class="operator" data-value="-">&minus;</button>
-                    <button class="operator" data-value="*">&times;</button>
+        <div class="container">
+            <h1 class="calculator-header">Xutik's Calculator</h1> 
+            <div class="calculator">
+                <input type="text" class="display" id="display" readonly>
+                <div class="buttons">
+                    <button onclick="getNumber()">7</button>
+                    <button onclick="getNumber()">8</button>
+                    <button onclick="getNumber()">9</button>
                     <button class="operator" data-value="/">&divide;</button>
+                    <button onclick="getNumber()">3</button>
+                    <button onclick="getNumber()">4</button>
+                    <button onclick="getNumber()">5</button>
+                    <button class="operator" data-value="*">&times;</button>
+                    <button onclick="getNumber()">1</button>
+                    <button onclick="getNumber()">2</button>
+                    <button onclick="getNumber()">3</button>
+                    <button class="operator" data-value="-">&minus;</button>
+                    <button onclick="getNumber()">0</button>
+                    <button onclick="getNumber()">.</button>
+                    <button class="delete" data-value="C">C</button>
+                    <button class="operator" data-value="+">&plus;</button>
+                    <button class="equal" data-value="=">=</button>
                 </div>
             </div>
         </div>
-        </body>
+    </body>
 </html>
