@@ -6,11 +6,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="script.css">
-        <script src="index.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="index.js"></script>
     </head>
     <body>
-        <script src="" async defer></script>
         <div class="container">
             <h1 class="calculator-header">Xutik's Calculator</h1> 
             <div class="calculator">
@@ -19,20 +18,20 @@
                     <button onclick="getNumber(7)">7</button>
                     <button onclick="getNumber(8)">8</button>
                     <button onclick="getNumber(9)">9</button>
-                    <button class="operator" data-value="/">&divide;</button>
-                    <button onclick="getNumber(3)">3</button>
+                    <button onclick="division()" class="operator" data-value="/">&divide;</button>
                     <button onclick="getNumber(4)">4</button>
                     <button onclick="getNumber(5)">5</button>
-                    <button class="operator" data-value="*">&times;</button>
+                    <button onclick="getNumber(6)">6</button>
+                    <button onclick="multiplication()" class="operator" data-value="*">&times;</button>
                     <button onclick="getNumber(1)">1</button>
                     <button onclick="getNumber(2)">2</button>
                     <button onclick="getNumber(3)">3</button>
-                    <button class="operator" data-value="-">&minus;</button>
+                    <button onclick="substraction()" class="operator" data-value="-">&minus;</button>
                     <button onclick="getNumber(0)">0</button>
                     <button onclick="getNumber('.')">.</button>
                     <button onclick="deleteAll()" data-value="C">C</button>
-                    <button class="operator" data-value="+">&plus;</button>
-                    <button class="equal" data-value="=">=</button>
+                    <button onclick="sum()" class="operator" data-value="+">&plus;</button>
+                    <button onclick="result()" class="equal" data-value="=">=</button>
                 </div>
             </div>
         </div>
