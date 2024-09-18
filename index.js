@@ -4,35 +4,32 @@ let firstNumber
 let secondNumber
 let operation
 
-document.getNumber('display').addEventListener()
-function getNumber() {
-    const numberInput = document.getElementById('display');
-    const number = Number(numberInput.value);
-    
-  }
+// document.getNumber('display').addEventListener()
+function getNumber(x) {
+    // const numberInput = document.getElementById('display');
+    // const number = Number(numberInput.value);
+    const numberInput = document.getElementById('display')
 
-
-document.getElementById('display').addEventListener()
-const display = document.getElementById('display');
-function updateDisplay(value) {
-    document.getElementById('display').value = value;
-  }
-
-document.getElementById('delete').addEventListener('click', deleteLastChar);
-function deleteLastChar() {
-    let display = document.getElementById('display'); 
-    let currentValue = display.value;
-    
-    if (currentValue.length > 0) {
-    display.value = currentValue.slice(0, -1);
+    if(x ==='.' && numberInput.value.includes('.')) {
+        return
     }
-  }
+    if(x ==='.' && numberInput.value ==='') {
+        return numberInput.value = '0.'
+    }
+    numberInput.value += x
+    // numberInput.value = Number(x)
+}
 
-const buttons = document.querySelectorAll('button');
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    const value = this.textContent;
-    display.value += value;
-  });
-});
+
+// document.getElementById('display').addEventListener()
+// const display = document.getElementById('display');
+// function updateDisplay(value) {
+//     document.getElementById('display').value = value;
+//   }
+
+// document.getElementById('delete').addEventListener('click', deleteLastChar);
+function deleteAll() {
+    let display = document.getElementById('display'); 
+    display.value = '';
+  }
 
